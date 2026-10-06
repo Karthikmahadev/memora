@@ -57,7 +57,7 @@ export default function MadeToMatter() {
         }}
       >
         <ImgBox
-          src="/img/gallery/img1.avif"
+          src="/img/gallery/DSC00973-01.jpeg"
           alt="Architecture"
           delay={0.1}
           style={{ gridColumn: "1", gridRow: "1 / 3", borderRadius: 24 }}
@@ -69,13 +69,13 @@ export default function MadeToMatter() {
           style={{ gridColumn: "2", gridRow: "1 / 3", borderRadius: 24 }}
         />
         <ImgBox
-          src="/img/gallery/img3.avif"
+          src="/img/gallery/DSC00308~2.jpg"
           alt="Festival"
           delay={0.3}
           style={{ gridColumn: "3", gridRow: "1", borderRadius: 24 }}
         />
         <ImgBox
-          src="/img/gallery/img5.avif"
+          src="/img/gallery/DSC05225.jpg"
           alt="Desert"
           delay={0.4}
           style={{ gridColumn: "3", gridRow: "2", borderRadius: 24 }}

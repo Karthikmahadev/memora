@@ -43,7 +43,7 @@ function NavPill({
         {/* Top Header Bar */}
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: 40 }}>
           <span style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700, fontSize: 20, letterSpacing: "-0.5px", color: "#111" }}>
-            memora
+            Tilt
           </span>
 
           <AnimatePresence mode="wait">

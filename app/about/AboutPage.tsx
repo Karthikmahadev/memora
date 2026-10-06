@@ -1,5 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
+import ContactSection from "../components/ContactSection";
+import UnrulyManifesto from "../components/UnrulyManifesto";
+import CoreValues from "../components/Corevalues";
+import MissionCollage from "../components/Missioncollage";
 
 // ── Data ──────────────────────────────────────────────────────────────────────
 const WORK_ITEMS = [
@@ -21,8 +25,8 @@ const TEAM = [
 ];
 
 // ── Animation Variants ────────────────────────────────────────────────────────
-const transition = { 
-  duration: 1, 
+const transition = {
+  duration: 1,
   ease: [0.16, 1, 0.3, 1] as [number, number, number, number] // ✅ cast the array
 };
 
@@ -51,7 +55,7 @@ export default function AboutPage() {
     <div style={{ fontFamily: "'Poppins', sans-serif", background: BG, color: "#1a1a1a", overflowX: "hidden" }}>
 
       {/* 1. HERO */}
-      <section style={{ padding: "clamp(60px,8vw,120px) clamp(32px,6%,80px)", display: "grid", gridTemplateColumns: "1fr clamp(260px,35%,420px)", gap: "clamp(40px,6vw,80px)", alignItems: "center", minHeight: "80vh" }}>
+      {/* <section style={{ padding: "clamp(60px,8vw,120px) clamp(32px,6%,80px)", display: "grid", gridTemplateColumns: "1fr clamp(260px,35%,420px)", gap: "clamp(40px,6vw,80px)", alignItems: "center", minHeight: "80vh" }}>
         <motion.div initial="initial" whileInView="whileInView" variants={staggerContainer} viewport={{ once: true }}>
           <motion.div variants={fadeInUp} style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 32 }}>
             <span style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.18em", color: "#888", textTransform: "uppercase" }}>(About Us)</span>
@@ -67,7 +71,10 @@ export default function AboutPage() {
           style={{ borderRadius: 4, overflow: "hidden", aspectRatio: "3/4", background: "#d8cfc4", boxShadow: "0 20px 60px rgba(0,0,0,0.12)" }}>
           <img src="/img/about/hero-product.avif" alt="Studio hero" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
         </motion.div>
-      </section>
+      </section> */}
+
+
+      <UnrulyManifesto />
 
       {/* 2. SELECTED WORK */}
       <section style={{ background: "#f5f0eb", padding: "clamp(48px,6vw,96px) clamp(32px,6%,80px)" }}>
@@ -89,31 +96,9 @@ export default function AboutPage() {
         </motion.div>
       </section>
 
-      {/* 3. QUOTE */}
-      <section style={{ background: BG, padding: "clamp(80px,10vw,140px) clamp(32px,10%,160px)", textAlign: "center" }}>
-        <motion.p {...fadeInUp} style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.2em", color: "#888", textTransform: "uppercase", marginBottom: 48 }}>Who We Are</motion.p>
-        <div style={{ overflow: "hidden", marginBottom: 52 }}>
-          <motion.blockquote variants={maskReveal} initial="initial" whileInView="whileInView"
-            style={{ fontWeight: 400, fontSize: "clamp(22px,3.2vw,46px)", lineHeight: 1.45, color: "#1a1a1a", letterSpacing: "-0.3px" }}>
-            "In prestige photography, the brands redefining the space are taking a visual-first approach."
-          </motion.blockquote>
-        </div>
-        <motion.div {...fadeInUp} style={{ fontStyle: "italic", fontSize: "clamp(28px,3vw,42px)" }}>Hari & Jeyanth</motion.div>
-      </section>
 
-      {/* 4. PRINCIPLES */}
-      <section style={{ background: "#e8e0d6", padding: "clamp(48px,6vw,96px) clamp(32px,6%,80px)" }}>
-        <motion.div variants={staggerContainer} initial="initial" whileInView="whileInView" viewport={{ once: true, margin: "-50px" }}
-          style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "clamp(40px,5vw,80px) clamp(48px,8vw,120px)" }}>
-          {PRINCIPLES.map((p) => (
-            <motion.div key={p.num} variants={fadeInUp}>
-              <span style={{ fontSize: 12, fontWeight: 500, color: "#999" }}>({p.num})</span>
-              <h3 style={{ fontWeight: 700, fontSize: "clamp(22px,2.5vw,38px)", margin: "10px 0 20px" }}>{p.title}</h3>
-              <p style={{ fontSize: "clamp(11px,0.9vw,13px)", lineHeight: 1.85, color: "#555", textTransform: "uppercase", letterSpacing: "0.04em", maxWidth: 380 }}>{p.body}</p>
-            </motion.div>
-          ))}
-        </motion.div>
-      </section>
+<MissionCollage />
+<CoreValues />
 
       {/* 5. TEAM */}
       <section style={{ background: BG, padding: "clamp(80px,8vw,120px) clamp(32px,6%,80px)" }}>
@@ -136,7 +121,7 @@ export default function AboutPage() {
       </section>
 
       {/* 6. BOTTOM CTA */}
-      <section style={{ background: "#1a1a1a", padding: "clamp(100px,12vw,160px) 5%", textAlign: "center" }}>
+      {/* <section style={{ background: "#1a1a1a", padding: "clamp(100px,12vw,160px) 5%", textAlign: "center" }}>
         <motion.div initial={{ y: 50, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={transition}>
           <h2 style={{ fontWeight: 700, fontSize: "clamp(32px,5vw,72px)", color: "#fff", lineHeight: 1.1, marginBottom: 40 }}>Ready to create something <br/> extraordinary?</h2>
           <motion.a href="#contact" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
@@ -144,7 +129,13 @@ export default function AboutPage() {
             Get In Touch
           </motion.a>
         </motion.div>
-      </section>
+      </section> */}
+
+
+      <ContactSection
+        backgroundImage="/img/contact-interior.jpg"
+        contactLink="/contact"
+      />
 
     </div>
   );

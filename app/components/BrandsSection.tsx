@@ -3,10 +3,10 @@
 import { useState, useRef, useEffect } from "react";
 
 const BRANDS = [
-  { id: "uefa",    name: "UEFA",                  logo: "/img/brands/uefa.jpg" },
-  { id: "pfizer",  name: "Pfizer",                 logo: "/img/brands/pfizer.jpg" },
-  { id: "fedex",   name: "FedEx",                  logo: "/img/brands/fedex.png" },
-  { id: "centri",  name: "Centrient",              logo: "/img/brands/centrient.jpg" },
+  { id: "htm",    name: "HTM",                  logo: "/img/brands/uefa.jpg" },
+  { id: "inai",  name: "Inai",                 logo: "/img/brands/pfizer.jpg" },
+  { id: "bramma",   name: "Bramma",                  logo: "/img/brands/fedex.png" },
+  { id: "localalites",  name: "Localites",              logo: "/img/brands/centrient.jpg" },
   { id: "corden",  name: "Corden Pharma",          logo: "/img/brands/cordenpharma.png" },
   { id: "radisys", name: "Radisys",                logo: "/img/brands/radisys.png" },
   { id: "nl",      name: "NL",                     logo: "/img/brands/nl.png" },

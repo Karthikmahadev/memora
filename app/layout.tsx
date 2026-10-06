@@ -6,7 +6,7 @@ import ClientWrapper from "./components/ClientWrapper";
 
 
 export const metadata: Metadata = {
-  title: "MEMORA ",
+  title: "Tilt ",
   description:
     "Visual storytelling for the digital age. Cinematography, Art Direction & Digital R&D.",
 };

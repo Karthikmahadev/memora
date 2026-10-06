@@ -137,11 +137,11 @@ export default function Footer() {
           style={{ paddingBottom: 40 }}
         >
           <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: "0 0 8px" }}>
-            © 2026 Memora. All Rights Reserved.
+            © 2026 Tilt. All Rights Reserved.
           </p>
         </motion.div>
 
-        {/* Bottom-right: giant "memora" wordmark */}
+        {/* Bottom-right: giant "tilt" wordmark */}
         <div style={{ overflow: "hidden", marginBottom: -20 }}>
           <motion.div
             variants={wordmarkVariant}
